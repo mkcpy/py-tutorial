@@ -1,0 +1,26 @@
+# Your code below: 
+
+first_names = ["Ainsley", "Ben", "Chani", "Depak"]
+preferred_size = ["Small", "Large", "Medium"]
+
+#Adding a missed size preference
+preferred_size.append("Medium")
+
+#Boolean value represents preferred expedited shipping
+
+customer_data = [
+  [first_names[0], preferred_size[0], True],
+  [first_names[1], preferred_size[1], False],
+  [first_names[2], preferred_size[2], False],
+  [first_names[-1], preferred_size[-1], False],
+]
+
+#Change in shipping preference
+customer_data[1].remove(False)
+
+#Creating a final list with new values merging into existing list
+customer_data_final = customer_data + [["Amit", "Large", True], ["Karim", "X-Large", False]]
+
+
+print(customer_data_final)
+
