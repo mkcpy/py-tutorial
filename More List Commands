@@ -1,0 +1,28 @@
+inventory = ["twin bed", "twin bed", "headboard", "queen bed", "king bed", "dresser", "dresser", "table", "table", "nightstand", "nightstand", "king bed", "king bed", "twin bed", "twin bed", "sheets", "sheets", "pillow", "pillow"]
+
+inventory_len = len(inventory)
+print(inventory_len)
+
+##Creating variables to specific indexes
+#Select first element
+first = inventory[1]
+#Select last element
+last = inventory[-1]
+#Splice to select index 2, and up to, but not including, index 6
+inventory_2_6 = inventory[2:6]
+#Selecting first 3 items
+first_3 = inventory[:3]
+#Counting specific item using .count
+twin_beds = inventory.count("twin bed")
+#Removing a specific element using .pop
+removed_item = inventory.pop(4)
+#Inserting a new element using .insert at a specific spot
+inventory.insert(10, "19th Century Bed Frame")
+
+##Two methods for sorting alphabetically. Use Reverse=True to reverse-order
+#Utilizing .sort()
+inventory.sort()
+print(inventory)
+#Utilizing sorted()
+sorted_inventory = sorted(inventory)
+print(sorted_inventory)
